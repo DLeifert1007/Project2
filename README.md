@@ -1,3 +1,4 @@
+
 # Sports Management Data Analysis
 
 This project involves the analysis and preprocessing of a sports management dataset. The goal is to explore the data, preprocess it, and apply various machine learning models to evaluate and visualize the results.
@@ -7,77 +8,26 @@ This project involves the analysis and preprocessing of a sports management data
 ```
 .
 ├── archive/
-│   ├── 
-
-extra_trees_archive.ipynb
-
-
-│   ├── test.txt
+├── plots/
 ├── __pycache__/
 ├── .ipynb_checkpoints/
-│   ├── Dataset_exploration-checkpoint.ipynb
-│   ├── Preprocessing-checkpoint.ipynb
-├── 
+├── pipeline.py
+├── Dataset_exploration.ipynb
+├── Preprocessing.ipynb
+├── README.md
+├── sports_management_dataset.csv
+├── sports_management_encoded_eventtype.csv
+├── sports_management_encoded.csv
 
-Cheatsheet.ipynb
-
-
-├── 
-
-data_analysis.py
-
-
-├── 
-
-Dataset_exploration.ipynb
-
-
-├── 
-
-extra_trees.ipynb
-
-
-├── 
-
-Preprocessing.ipynb
-
-
-├── 
-
-random_forest.ipynb
-
-
-├── 
-
-README.md
-
-
-├── 
-
-sports_management_dataset.csv
-
-
-├── 
-
-sports_management_encoded_eventtype.csv
-
-
-├── 
-
-sports_management_encoded.csv
-
-
-├── SR Models.ipynb
 ```
+
 
 ## Notebooks
 
 - **Cheatsheet.ipynb**: Contains various code snippets and examples for model evaluation, visualization, and preprocessing.
 - **Dataset_exploration.ipynb**: Initial exploration and analysis of the dataset.
 - **Preprocessing.ipynb**: Data preprocessing steps including encoding and scaling.
-- **extra_trees.ipynb**: Implementation and evaluation of the Extra Trees model.
-- **random_forest.ipynb**: Implementation and evaluation of the Random Forest model.
-- **SR Models.ipynb**: Contains additional models and their evaluations.
+- **sports_sustainability.ipynb**: Analysis and evaluation of sports sustainability metrics.
 
 ## Data
 
@@ -89,8 +39,7 @@ sports_management_encoded.csv
 
 1. **Exploration**: Start with `Dataset_exploration.ipynb` to understand the dataset.
 2. **Preprocessing**: Use `Preprocessing.ipynb` to preprocess the data.
-3. **Modeling**: Apply different models using `extra_trees.ipynb`, `random_forest.ipynb`, and `SR Models.ipynb`.
-4. **Evaluation**: Evaluate the models and visualize the results using the provided code snippets in `Cheatsheet.ipynb`.
+3. **Modeling**: Use `sports_sustainability.ipynb` to run the Gradient Boosting Model
 
 ## Requirements
 
