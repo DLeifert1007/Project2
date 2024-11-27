@@ -6,40 +6,34 @@ This project involves the analysis and preprocessing of a sports management data
 ## Project Structure
 
 ```
-.
-├── archive/
-├── plots/
+
 ├── __pycache__/
 ├── .ipynb_checkpoints/
+├── archive/
+├── plots/
 ├── pipeline.py
-├── Dataset_exploration.ipynb
 ├── Preprocessing.ipynb
 ├── README.md
 ├── sports_management_dataset.csv
-├── sports_management_encoded_eventtype.csv
 ├── sports_management_encoded.csv
+├── sports_sustainability.ipynb
 
 ```
 
-
 ## Notebooks
 
-- **Cheatsheet.ipynb**: Contains various code snippets and examples for model evaluation, visualization, and preprocessing.
-- **Dataset_exploration.ipynb**: Initial exploration and analysis of the dataset.
 - **Preprocessing.ipynb**: Data preprocessing steps including encoding and scaling.
 - **sports_sustainability.ipynb**: Analysis and evaluation of sports sustainability metrics.
 
 ## Data
 
 - **sports_management_dataset.csv**: The original dataset containing various features related to sports management.
-- **sports_management_encoded_eventtype.csv**: Encoded version of the dataset focusing on event types.
 - **sports_management_encoded.csv**: Fully encoded dataset used for model training and evaluation.
 
 ## Usage
 
-1. **Exploration**: Start with `Dataset_exploration.ipynb` to understand the dataset.
-2. **Preprocessing**: Use `Preprocessing.ipynb` to preprocess the data.
-3. **Modeling**: Use `sports_sustainability.ipynb` to run the Gradient Boosting Model
+1. **Preprocessing**: Use `Preprocessing.ipynb` to understand the dataset and preprocess the data.
+2. **Modeling**: Use 'pipeine.py' and `sports_sustainability.ipynb` to run the Gradient Boosting Model
 
 ## Requirements
 
