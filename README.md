@@ -20,6 +20,43 @@ This project involves the analysis and preprocessing of a sports management data
 
 ```
 
+
+
+
+## **Summary Analysis and Results**  
+
+### **Objective**  
+This project explores the use of AI to assess and predict sustainability metrics in sports events using the Sustainable Sports Event Management (SSEM) dataset. The primary goal was to build a predictive model for the Sustainability Score and derive insights into the dataset's patterns and usability.  
+
+### **Dataset Analysis**  
+The SSEM dataset contains 102,000 samples with all features represented as categorical data, either ordinal or nominal. The target variable is the "Sustainability Score," classified as Low, Moderate, or High.  
+
+Challenges encountered:  
+- **Class Imbalance:** A mildly skewed distribution of target classes led to difficulties in accurate prediction.  
+- **Random Data Patterns:** Despite preprocessing and modeling efforts, the dataset exhibited no discernible relationships or patterns.  
+
+### **Methodology**  
+1. **Preprocessing:**  
+   - Encoded categorical features into numerical formats.    
+   - Assessed multicollinearity using Variance Inflation Factor (VIF).  
+2. **Modeling:**  
+   - Trained a Gradient Boosting model due to its effectiveness with categorical data.  
+   - Addressed class imbalance using random undersampling.  
+   - Performed hyperparameter tuning to optimize model performance.  
+
+### **Results**  
+- **Initial Model:** The model achieved a balanced accuracy score of 33.3%.  
+- **After Undersampling:** The accuracy score dropped to 33.2%.  
+- **After Hyperparameter Tuning:** Balanced acurracy score dropped to 33.2%. Undersampling was not included in the tuned model as it 
+
+### **Insights**  
+The results suggest that the SSEM dataset is likely generated randomly, lacking meaningful relationships between features and target variables. This significantly impacts the model's ability to learn and predict effectively.  
+
+### **Conclusion**  
+While the project underscored the importance of robust data preprocessing and modeling techniques, it also highlighted the critical role of realistic, high-quality datasets in AI research. Future work should focus on developing datasets with meaningful patterns or collaborating with sports organizations to gather real-world data for analysis.  
+
+
+
 ## Notebooks
 
 - **Preprocessing.ipynb**: Data preprocessing steps including encoding and scaling.
