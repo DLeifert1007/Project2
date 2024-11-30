@@ -22,7 +22,6 @@ def split_data(X, y, z):
     X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=z)
     return X_train, X_test, y_train, y_test
 
-
 def pipeline_gradient_boosting(X, y, z, title, title2):
     X_train, X_test, y_train, y_test = split_data(X, y, z)
     clf = GradientBoostingClassifier(random_state=z).fit(X_train, y_train)
@@ -31,10 +30,6 @@ def pipeline_gradient_boosting(X, y, z, title, title2):
     # capture the clf scores in a variable to use for printing the results
     training_score = clf.score(X_train, y_train)
     testing_score = clf.score(X_test, y_test)
-    # print(f'Scores for the Model\n')
-    # print(f'Training Score: {training_score}')
-    # print(f'Testing Score: {testing_score}')
-
 
     feature_importances = clf.feature_importances_
     feature_names = X.columns
@@ -45,14 +40,11 @@ def pipeline_gradient_boosting(X, y, z, title, title2):
     plt.xlabel('Feature Importance')
     plt.title(title)
     plt.show()
-    # for i in range(len(feature_names)):
-    #     print(f'{feature_names[i]}: {feature_importances[i]}')
-    # print('\n')
     print('Classification Report\n')
     y_pred = clf.predict(X_test)
     print(classification_report(y_test, y_pred))
     print('Confusion Matrix\n')
-    print(confusion_matrix(y_test, y_pred)\n)
+    print(confusion_matrix(y_test, y_pred))
 
 # Balanced accuracy score
 
@@ -60,8 +52,6 @@ def pipeline_gradient_boosting(X, y, z, title, title2):
     y_test_pred = clf.predict(X_test)
     bal_acc_score_train = balanced_accuracy_score(y_train, y_train_pred)
     bal_acc_score_test = balanced_accuracy_score(y_test, y_test_pred)
-    # print(f'Balanced Accuracy Score for Training : {bal_acc_score_train}')
-    # print(f'Balanced Accuracy Score for Testing : {bal_acc_score_test}')
     
 #   Add Random Under Sampling to the model
     rus = RandomUnderSampler(random_state=z)
@@ -70,8 +60,6 @@ def pipeline_gradient_boosting(X, y, z, title, title2):
     # print(f'Scores for the Model with Random Under Sampling\n')
     rand_under_score_train = clf_rus.score(X_resampled, y_resampled)
     rand_under_score_test = clf_rus.score(X_test, y_test)
-    # print(f'Training Score RU : {rand_under_score_train}')
-    # print(f'Testing Score RU: {rand_under_score_test}')
 
 #   Add Random Over Sampling to the model
     ros = RandomOverSampler(random_state=z)
@@ -79,9 +67,6 @@ def pipeline_gradient_boosting(X, y, z, title, title2):
     clf_ros = GradientBoostingClassifier(random_state=z).fit(X_resampled, y_resampled)
     rand_over_score_train = clf_ros.score(X_resampled, y_resampled)
     rand_over_score_test = clf_ros.score(X_test, y_test)
-    # print(f'Scores for the Model with Random Over Sampling\n')
-    # print(f'Training Score : {rand_over_score_train}')
-    # print(f'Testing Score: {rand_over_score_test}')
 
 # # iterate over the depths of the trees
   
@@ -104,15 +89,18 @@ def pipeline_gradient_boosting(X, y, z, title, title2):
     # plt.show()
 
   # print the results
+    print('\n')
     print(f'Model: {model_name}')
     print(f'Dataset: {title2}\n')
+    print(f'Scores for the Original Model')
     print(f'Training Score: {training_score}')
     print(f'Testing Score: {testing_score}')
     print(f'Balanced Accuracy Score for Training : {bal_acc_score_train}')
     print(f'Balanced Accuracy Score for Testing : {bal_acc_score_test}\n')
+    print(f'Scores for the Model with Random UnderSampling')
     print(f'Training Score Random Undersampling : {rand_under_score_train}')
     print(f'Testing Score Random Undersampling: {rand_under_score_test}\n')
+    print(f'Scores for the Model with Random Over Sampling')
     print(f'Training Score Random Oversampling : {rand_over_score_train}')
     print(f'Testing Score Random Oversampling: {rand_over_score_test}')
-
 
