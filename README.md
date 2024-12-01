@@ -48,7 +48,7 @@ Challenges encountered:
 ### **Results**  
 - **Initial Model:** The model achieved a balanced accuracy score of 33.3%.  
 - **After Undersampling:** The accuracy score dropped to 33.2%.  
-- **After Hyperparameter Tuning:** Balanced acurracy score dropped to 33.4%. Undersampling was not included in the tuned model as it didn't show any improvement in accuracy.
+- **After Hyperparameter Tuning:** Balanced accurracy score came to 33.4%. Undersampling was not included in the tuned model as it didn't show any improvement in accuracy.
 
 ### **Insights**  
 The results suggest that the SSEM dataset is likely generated randomly, lacking meaningful relationships between features and target variables. This significantly impacts the model's ability to learn and predict effectively.  
