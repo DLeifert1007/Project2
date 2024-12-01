@@ -37,6 +37,7 @@ Challenges encountered:
 
 ### **Methodology**  
 1. **Preprocessing:**  
+   - Dropped any nulls (no null values were found in the dataset).
    - Encoded categorical features into numerical formats.    
    - Assessed multicollinearity using Variance Inflation Factor (VIF).  
 2. **Modeling:**  
