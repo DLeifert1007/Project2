@@ -32,7 +32,7 @@ This project explores the use of AI to assess and predict sustainability metrics
 The SSEM dataset contains 102,000 samples with all features represented as categorical data, either ordinal or nominal. The target variable is the "Sustainability Score," classified as Low, Moderate, or High.  
 
 Challenges encountered:  
-- **Class Imbalance:** A mildly skewed distribution of target classes led to difficulties in accurate prediction.  
+- **Class Imbalance:** A skewed distribution of target classes led to difficulties in accurate prediction.  
 - **Random Data Patterns:** Despite preprocessing and modeling efforts, the dataset exhibited no discernible relationships or patterns.  
 
 ### **Methodology**  
