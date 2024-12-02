@@ -42,7 +42,7 @@ Challenges encountered:
    - Assessed multicollinearity using Variance Inflation Factor (VIF).  
 2. **Modeling:**  
    - Trained a Gradient Boosting model due to its effectiveness with categorical data.  
-   - Addressed class imbalance using random undersampling.  
+   - Addressed class imbalance using random undersampling. We decided to do undersampling because we realized our dataset is randomly generated, oversampling could amplify this artificiality, reducing the reliability and interpretability of our model's performance.
    - Performed hyperparameter tuning to optimize model performance.  
 
 ### **Results**  
