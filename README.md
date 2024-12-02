@@ -62,7 +62,7 @@ While the project underscored the importance of robust data preprocessing and mo
 
 - **Preprocessing.ipynb**: Data preprocessing steps including encoding and scaling.
 - **sports_sustainability.ipynb**: Analysis and evaluation of sports sustainability metrics.
-
+- **LearningCurveSustainability.ipynb**: Allows us to see the learning curve of the model
 ## Data
 
 - **sports_management_dataset.csv**: The original dataset containing various features related to sports management.
