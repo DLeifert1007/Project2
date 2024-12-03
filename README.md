@@ -3,6 +3,8 @@
 
 This project involves the analysis and preprocessing of a sports management dataset. The goal is to explore the data, preprocess it, and apply various machine learning models to evaluate and visualize the results.
 
+[Click here for our Slides from Presentation](https://docs.google.com/presentation/d/1nvzgiq0oMXlzQAZmxxQAJeG7NjMHKxXoshiLME0NI8g/edit?usp=sharing)
+
 ## Project Structure
 
 ```
