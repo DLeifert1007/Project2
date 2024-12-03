@@ -61,7 +61,8 @@ def pipeline_gradient_boosting(X, y, z, title, title2):
     rand_under_score_train = clf_rus.score(X_resampled, y_resampled)
     rand_under_score_test = clf_rus.score(X_test, y_test)
 
-#   Add Random Over Sampling to the model
+#   Add Random Over Sampling to the model just out of curiosity and for comparision to undersampling
+#   Since the dataset is likely randomly generated, using over-sampling will likely amplify noise 
     ros = RandomOverSampler(random_state=z)
     X_resampled, y_resampled = ros.fit_resample(X_train, y_train)
     clf_ros = GradientBoostingClassifier(random_state=z).fit(X_resampled, y_resampled)
